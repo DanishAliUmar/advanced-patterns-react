@@ -22,10 +22,10 @@ async function seed() {
   const [demoUser] = await db
     .insert(usersTable)
     .values({
-      name: "Cosden Solutions",
-      bio: "Cosden Solutions is a company that teaches people how to code in React.",
-      email: "demo@cosdensolutions.io",
-      password: await auth.hashPassword("cosdensolutions"),
+      name: "Danish Solutions",
+      bio: "Danish Solutions is a company that teaches people how to code in React.",
+      email: "danishaliumar4@gmail.com",
+      password: await auth.hashPassword("danish-secret-key"),
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     })
